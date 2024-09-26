@@ -3,13 +3,7 @@
 //Preciso criar uma forma de atualizar os produtos
 //Preciso deletar os produtos
 
-let produtos = [
-    {
-        "id": 1,
-        "nome": "Celular",
-        "preco": "R$ " + 680
-    },
-];
+let produtos = [];
 
 while(true){
     let controle = parseInt(
@@ -65,5 +59,13 @@ function lerProduto(){
 }
 
 function deletarProduto(){
-    
+    let delet = parseInt(prompt("Digite o número do id para deletar o produto"));
+    if(delet){
+        for(let i = 0; i < produtos.length; i++){
+            if(produtos.id === delet){
+                produtos.splice(i, 1);
+                alert("Produto deletado com sucesso");
+            }
+        }
+    }
 }
