@@ -72,7 +72,7 @@ function deletarProduto(){
     let listaIDs = deletarIDs.split(",").map(Number);
 
     if(produtos.length === 0){
-        return alert("Não há produtos registrados que possam ser deletados")
+        return alert("Não há produtos registrados que possam ser deletados");
     }
 
     if(listaIDs.length > 0){
@@ -100,7 +100,7 @@ function atualizarProduto(){
                     alert("Nome mudado com sucesso");
                 case 2:
                     let preco = parseFloat(prompt("O que deseja mudar no preço\n Preço antigo: " + produtos[i].preco));
-                    produtos[i].nome = preco;
+                    produtos[i].preco = preco;
                     alert("Preço mudado com sucesso");
             }
         }
