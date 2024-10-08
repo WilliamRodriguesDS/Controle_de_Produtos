@@ -98,6 +98,7 @@ function atualizarProduto(){
                     let nome = prompt("O que deseja mudar no nome?\n Nome antigo: " + produtos[i].nome);
                     produtos[i].nome = nome;
                     alert("Nome mudado com sucesso");
+                    
                 case 2:
                     let preco = parseFloat(prompt("O que deseja mudar no preço\n Preço antigo: " + produtos[i].preco));
                     produtos[i].preco = preco;
