@@ -84,6 +84,7 @@ function deletarProduto(){
         alert("Produto(s) deletado(s) com sucesso");
     }
 }
+
 function atualizarProduto(){
     let solicitarID = parseInt(prompt("Digite o número do ID que deseja atualizar"));
 
